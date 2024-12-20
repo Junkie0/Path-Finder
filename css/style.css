@@ -1,0 +1,127 @@
+:root {
+    --clr-navy: #34495e;
+    --primary-clr: #6563ff;
+    --secondary-clr: #c4c3fc;
+    --light-line: #e4e2ed;
+    --cell-width : 22px;
+    --light-text: #686673;
+    --light-dot: #adaac0;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.template {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 4px;
+    }
+    .nav-menu{
+        grid-column: 1/-1;
+        width: max-content;
+    }
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+li.drop-box {
+    position: relative;
+}
+
+.nav-menu > li > a {
+    color: white;
+    padding: 8px 16px;
+    display: block;
+}
+
+.nav-menu > li > a:hover {
+    color: var(--secondary-clr);
+}
+
+.nav-menu > li.active > a {
+    color: var(--primary-clr);
+}
+
+.drop-box .drop-menu {
+    right: 0;
+    top: calc(100% + 10px);
+    position: absolute;
+    background-color: pink;
+    min-width: 120px;
+    padding: 4px;
+    border-radius: 8px;
+    display: none; /* Hidden by default */
+}
+
+.drop-box:hover .drop-menu {
+    display: block; /* Show on hover */
+}
+
+.drop-menu > li > a {
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 4px;
+}
+
+.drop-menu > li > a:hover {
+    background-color: var(--primary-clr);
+}
+
+.drop-menu > li.active > a {
+    background-color: var(--primary-clr);
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Adjust for grid size */
+    grid-template-rows: repeat(10, 1fr);    /* Adjust for grid size */
+    gap: 2px;                               /* Gap between grid cells */
+    background-color: #ddd;                 /* Background color for the board */
+}

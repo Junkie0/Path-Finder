@@ -3,17 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Path Finder</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/utility.css" rel="stylesheet">
 </head>
 <body>
-    <a class="template">
-        <header>
-            <nav>
-                <a href="./index.html" class="logo">Path Finding Visualizer</a>
-                <div class="btn" id="visualize">Visualize</div>
-                <ul class="menu"></ul>
-            </nav>
-        </header>
-        <div id="board"></div>
-    </div>
+<div class="template">
+    <header>
+        <nav>
+            <a class="logo" href="./index.html">Path Finding Visualizer</a>
+            <div class="btn" id="visualize">Visualize</div>
+            <ul class="nav-menu" class="drop-box">
+                <li><a href="#">Clear Path</a></li>
+                <li><a href="#">Clear Board</a></li>
+                <li><a href="#">Generate Maze</a></li>
+                <li class="drop-box active">
+                    <a href="#">Pixel <span class="caret"></span></a>
+                    <ul class="drop-menu">
+                        <li><a href="#">14px</a></li>
+                        <li><a href="#">16px</a></li>
+                        <li><a href="#">18px</a></li>
+                        <li><a href="#">20px</a></li>
+                        <li><a href="#">22px</a></li>
+                        <li><a href="#">24px</a></li>
+                        <li><a href="#">26px</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-box">
+                    <a href="#">Speed <span class="caret"></span></a>
+                    <ul class="drop-menu">
+                        <li><a href="#">Slow</a></li>
+                        <li><a class="active" href="#">Normal</a></li>
+                        <li><a href="#">Fast</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-box">
+                    <a href="#">Algorithms <span class="caret"></span></a>
+                    <ul class="drop-menu">
+                        <li><a class="active" href="#">BFS</a></li>
+                        <li><a href="#">DFS</a></li>
+                        <li><a href="#">Dijkstra's Algorithm</a></li>
+                        <li><a href="#">Greedy Best-First Search</a></li>
+                        <li><a href="#">A* Algorithm</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="board"></div>
+</div>
 </body>
+<scrip src="app.js"></scrip>
 </html>
