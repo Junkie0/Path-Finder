@@ -1,4 +1,4 @@
-# PathFinderVisualizer  
+# Path Finder  
 
 ### 🌐 **Live Demo:** [here](https://path-finder-using-algos.tiiny.site) 
 
