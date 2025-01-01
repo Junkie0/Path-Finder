@@ -1,6 +1,6 @@
 # PathFinderVisualizer  
 
-### 🌐 **Live Demo:** here 
+### 🌐 **Live Demo:** [here](https://path-finder-using-algos.tiiny.site) 
 
 ---
 
