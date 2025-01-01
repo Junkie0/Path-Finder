@@ -22,7 +22,7 @@ PathFinderVisualizer is a web-based interactive tool designed to showcase the in
   - **Depth-First Search (DFS)**  
   - **Dijkstra's Algorithm**  
   - **Greedy Best-First Search**  
-  - **A* Algorithm**  
+  - **A'*' Algorithm**  
 
 - **Dynamic Visualization:**  
   - Observe algorithm behavior step-by-step.  
@@ -53,4 +53,4 @@ PathFinderVisualizer is a web-based interactive tool designed to showcase the in
 
 ---
 
-Explore the fascinating world of pathfinding algorithms with PathFinderVisualizer!  
+Explore the fascinating world of pathfinding algorithms with Path Finder!  
