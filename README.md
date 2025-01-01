@@ -5,7 +5,7 @@
 ---
 
 ## ✨ About the Project  
-PathFinderVisualizer is a web-based interactive tool designed to showcase the inner workings of various pathfinding algorithms. Built entirely with JavaScript, HTML, and CSS, this application lets users create and experiment with custom mazes to see how algorithms navigate obstacles and find optimal paths in real-time.  
+Path Finder is a web-based interactive tool designed to showcase the inner workings of various pathfinding algorithms. Built entirely with JavaScript, HTML, and CSS, this application lets users create and experiment with custom mazes to see how algorithms navigate obstacles and find optimal paths in real-time.  
 
 ---
 
